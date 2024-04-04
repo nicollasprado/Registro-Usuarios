@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/verCadastrados/search" method="POST">
+    <input type="text" name="search" id="searchID" placeholder="Pesquisar">
+</form>
+
+<div id="UsersView">
+    {% for info in data %}
+    <div class="userInfosList">
+        <h1>Usuário {{info.0}}</h1>
+        <ul>
+            <li>ID: {{info.0}}</li>
+            <li>Primeiro Nome: {{info.1}}</li>
+            <li>Ultimo Nome: {{info.2}}</li>
+            <li>Email: {{info.3}}</li>
+            <li>Senha: {{info.4}}</li>
+            <li>Data de Criação: {{info.5}}</li>
+            <li>Último update: {{info.6}}</li>
+            <li></li>
+        </ul>
+    </div>
+    
+    {% endfor %}
+</div>
+
+{% endblock content %}

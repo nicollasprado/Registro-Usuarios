@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 style="color: var(--color-white);">Registro de Usuários</h1>
+
+<form action="/" method="POST">
+    <label for="first_nameID">Primeiro Nome:</label>
+    <input type="text" name="first_name" id="first_nameID">
+
+    <label for="last_nameID">Último Nome:</label>
+    <input type="text" name="last_name" id="last_nameID">
+
+    <label for="emailID">Email:</label>
+    <input type="email" name="email" id="emailID">
+
+    <label for="passwordID">Senha:</label>
+    <input type="password" name="password" id="passwordID">
+
+    <button type="submit" id="submitButton">Cadastrar</button>
+</form>
+
+{% endblock content %}

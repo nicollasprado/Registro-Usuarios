@@ -1,0 +1,22 @@
+#UsersView {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.userInfosList {
+    background-color: var(--color-white);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+li {
+    list-style-type: none;
+    color: black;
+}
